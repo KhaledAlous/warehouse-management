@@ -9,7 +9,7 @@ use App\Http\Controllers\API\ProductAPIController;
 use APP\Models\Product;
 
 Route::get('/user', function (Request $request) {
-    return $request->user();
+    return $request->user();jh
 })->middleware('auth:sanctum');
 Route::prefix('products')->group(function (){
     Route::get('/get_all', [ProductAPIController::class, 'getProducts']);
